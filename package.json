@@ -1,0 +1,36 @@
+{
+    "name": "purupiu-theme",
+    "displayName": "Purupiu Theme",
+    "description": "Tema personalizado para uso pessoal",
+    "version": "0.0.2",
+    "icon": "assets/icon.jpg",
+    "publisher": "isadora",
+    "keywords": [
+        "theme",
+        "dark",
+        "purupiu"
+    ],
+    "engines": {
+        "vscode": "^1.50.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Purupiu Theme :)",
+                "uiTheme": "vs-dark",
+                "path": "./themes/purupiu-color-theme.json"
+            }
+        ]
+    },
+    "scripts": {
+        "package": "vsce package --no-yarn",
+        "publish": "vsce publish --no-yarn"
+    },
+    "devDependencies": {
+        "vsce": "^2.15.0"
+    },
+    "license": "MIT"
+}
